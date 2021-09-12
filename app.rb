@@ -2,8 +2,9 @@ require 'sinatra'
 
 get '/' do
   @title = 'Home'
-  erb :index
   @time = Time.now
+  erb :index
+  
 end
 
 get '/about' do
